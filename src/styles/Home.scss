@@ -1,0 +1,361 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.Home{
+    width:100vw;
+    // position: absolute;
+    height:90vh;
+    background-color:rgba(126, 155, 145, 0.548);
+    
+    // border-radius: 0 0 30% 30%;
+    z-index: 10;
+    >div{
+        position: absolute;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height: 60%;
+        justify-content: center;
+
+        
+        h1{
+            font:900 5rem 'aboreto';
+            padding: 1rem ;
+            color: $dark;
+            
+        }
+        
+        p{
+            font:900 1rem 'ubuntu'; 
+            margin: 2rem 4rem;
+            color: $dark
+            
+            
+        }
+    }
+
+      
+}
+
+.home2{
+    width: 100vw;
+    height:100vh;
+    // background-color:rgba(3, 17, 12,0.8);
+    // padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $first;
+    
+    img{
+        width: 30%;
+        margin: 0 20px;
+        border-radius: 0 100px 100px 0;
+        animation: imgUp 2s linear infinite alternate;
+    }
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            color: rgb(91, 89, 216);
+            padding:1rem;
+            margin: auto;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font: 900 4rem $aboreto;
+            // margin-top: -100px;
+            border-bottom:2px solid rgb(91, 89, 216) ;
+            
+        }
+
+        p{
+            padding: 50px 20px;
+            margin: 10px;
+            // font: 500 1rem $ubuntu;
+            font: 500 italic 1rem $mukta;
+            font-size: 1.5rem;
+            word-spacing: 0.5rem;
+            // letter-spacing: 0.2rem;
+            // color: $first;
+            color: $dark;
+
+        }
+
+    }
+
+    
+}
+
+.home3{
+    width: 100vw;
+    height: 100vh;
+    color: $second;
+    background-color:$first;
+    div{
+        width: 70%;
+        margin-top: 100px ;
+        height:80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 200px 200px 0;
+        flex-direction:column ;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(126, 155, 145, 0.548);
+        position: absolute;
+            >h2{
+                    font-family: $aboreto;
+                    font-size: 3rem;
+                    color:$dark;
+                    // margin-top: -200px;
+                    padding: 2rem;
+                    text-transform: uppercase;
+                    width: 10em;
+                    border-bottom:2px solid $dark;
+                    text-align: center;
+                    
+                }
+                
+                >p{
+                    padding: 50px 20px;
+                    color:$dark;
+            margin: 10px;
+            font: 500 italic 1rem $mukta;
+            font-size: 1.2rem;
+            word-spacing: 0.5rem;
+            letter-spacing: 0.2px;
+            line-height: 170%;
+
+            }
+    }
+
+}
+
+.home4{
+    width: 100vw;
+    height: 100vh;
+    color: $second;
+    background-color:$first;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    div{
+       width: 70%;
+       height: 70vh;
+       border-radius: 200px 0 0 200px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color: rgba(126, 155, 145, 0.548);
+
+    >h2{
+            font-family: $aboreto;
+            color: $dark;
+            font-size: 3rem;
+            // margin-top: -200px;
+            padding: 2rem;
+            text-transform: uppercase;
+            width: 10em;
+            border-bottom:2px solid $dark;
+            text-align: center;
+
+    }
+
+    >p{
+        padding: 50px 20px;
+    margin: 10px;
+    font: 500 italic 1rem 'poppins';
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2px;
+    line-height: 170%;
+    color: $second;
+
+    }
+        
+    >article{
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // position: absolute;
+        >div{
+            margin: 1rem;
+            height: 8rem;
+            width: 8rem;
+            background-color: $first;
+            border-radius: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color:$second;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover{
+                animation:imgUp 0.9s linear infinite alternate;
+                filter:invert(1);
+                // background-color $dark;
+            }
+        
+            >svg{
+                font-size: 4rem;
+                // background-color: $dark;
+            }
+        }
+
+    }
+
+    }
+
+}
+@keyframes imgUp {
+    to{
+        transform: translateY(-20px);
+    }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .Home{
+        height:80vh;
+        >div{
+            h1{
+                font:700 3rem 'aboreto';
+                padding: 0.5rem ;  
+                margin-top: 20px;
+            }
+            
+            p{
+                font:600 1rem 'ubuntu'; 
+                margin: 1rem;       
+            }
+        }
+    
+          
+    }
+    
+    .home2{
+      
+        height: 100vh;
+        flex-direction: column;
+        // margin-top: 200px;
+        overflow-x: hidden;
+        position: relative;
+        img{
+            width: 60%;
+            margin-top:20px;
+            border-radius: none;
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            h2{
+          
+                padding:1rem;
+       
+                font: 900 3rem $aboreto;
+     
+                
+            }
+    
+            p{
+                padding: 10px 5px;
+              
+                font: 500 italic 1.65rem $mukta;
+                font-size:1rem;
+                word-spacing: 0.3rem;
+            }
+    
+        }
+    
+        
+    }
+    
+    .home3{
+
+     
+        div{
+            width: 100%;
+            height: 100%;
+            border-radius:0%;
+            margin: 0px;
+         
+                >h2{
+                        font-size: 1.5rem;
+                        // margin-top: 100px;
+                        padding: 1rem;                 
+                    }
+                    
+                    >p{
+                       margin-top: 50px;
+                        padding: 0px 10px;
+                   
+                // margin: 10px;
+                font: 500 italic 1rem $mukta;
+                font-size: 1.2rem;
+                word-spacing: 0.2rem;
+                letter-spacing: 0.2px;
+                line-height: 150%;
+    
+                }
+        }
+    
+    }
+    
+    .home4{
+        height: 80vh;
+        justify-content:flex-start;
+        div{
+           width: 100%;
+           height: 100%;
+           border-radius:0%;
+           
+           h2{
+      
+            font-size: 2rem;
+               margin-top: 0px;
+            padding: 1rem;
+            text-transform: uppercase;
+            width: 10em;
+            border-bottom:2px solid $dark;
+            text-align: center;
+    }
+
+            
+            >article{
+                margin: 3rem 0;
+            justify-content:center;
+            >div{
+                margin: 1rem;
+                height: 8rem;
+                width: 8rem;
+            }
+    
+        }
+    
+        }
+    
+    } 
+}

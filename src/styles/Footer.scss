@@ -1,0 +1,59 @@
+@import "colors";
+
+
+.Footer{
+    width: 100vw;
+    height:20vh;
+    background-color: $first;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    >h4{
+        font-size: 2.25rem;
+        font:500 italic $marker;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0.3rem;
+        color:$dark;
+        text-transform: capitalize;
+    }
+
+    div>svg{
+        color: $dark;
+        font-size: 3rem;
+        margin:  0px 20px;
+        padding:2px;
+        cursor: pointer;
+        &:hover{
+            transform:rotate(5deg);
+            
+        }
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        justify-content: flex-end;
+        color:$dark;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .Footer{
+     
+        height:15vh;
+      
+        >h4{
+            font-size: 1.25rem;
+        }
+        div>svg{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    
+    } 
+    
+}
